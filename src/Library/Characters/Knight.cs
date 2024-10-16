@@ -10,7 +10,7 @@ public class Knight: ICharacter
     public Knight(string name)
     {
         this.Name = name;
-
+        
         this.AddItem(new Sword());
         this.AddItem(new Armor());
         this.AddItem(new Shield());

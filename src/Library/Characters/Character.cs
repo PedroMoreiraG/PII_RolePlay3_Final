@@ -55,12 +55,12 @@ public abstract class Character
         }
     }
     
-    public virtual void AddItem(IItem item)
+    public void AddItem(IItem item)
     { 
         this.items.Add(item);
     }
 
-    public virtual void RemoveItem(IItem item)
+    public void RemoveItem(IItem item)
     {
         this.items.Remove(item);
     }
