@@ -11,8 +11,6 @@ public class Wizard: Character
         this.AddItem(new Staff());
     }
 
-    public string Name { get; set; }
-
     public override int AttackValue
     {
         get
