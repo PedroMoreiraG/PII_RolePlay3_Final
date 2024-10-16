@@ -65,12 +65,12 @@ public abstract class Character
         this.items.Remove(item);
     }
 
-    public virtual void Cure()
+    public void Cure()
     {
         this.Health = 100;
     }
 
-    public virtual void ReceiveAttack(int power)
+    public void ReceiveAttack(int power)
     {
         if (this.DefenseValue < power)
         {
