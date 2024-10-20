@@ -1,9 +1,8 @@
 using System.Collections.Generic;
 namespace Ucu.Poo.RoleplayGame;
 
-public class Knight: Character
+public class Knight: Heroes
 {
-
     public Knight(string name):base(name)
     {
         this.Name = name;
@@ -12,6 +11,4 @@ public class Knight: Character
         this.AddItem(new Armor());
         this.AddItem(new Shield());
     }
-
-  
 }

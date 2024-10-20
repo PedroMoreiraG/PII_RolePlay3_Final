@@ -1,13 +1,13 @@
-using System.Collections.Generic;
-namespace Ucu.Poo.RoleplayGame;
+﻿namespace Ucu.Poo.RoleplayGame;
 
-public class Wizard: Heroes
+public class DarkElf : Enemies
 {
     public List<IMagicalItem> magicalItems = new List<IMagicalItem>();
-    public Wizard(string name) : base(name)
+    
+    public DarkElf(string name) : base(name)
     {
         this.Name = name;
-
+        
         this.AddItem(new Staff());
     }
 
@@ -66,5 +66,4 @@ public class Wizard: Heroes
     {
         this.magicalItems.Remove(item);
     }
-
 }
