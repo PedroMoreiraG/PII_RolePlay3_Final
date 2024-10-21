@@ -19,7 +19,7 @@ class Program
         Knight arturo = new Knight("Arturo");
         Archer legolas = new Archer("Legolas");
         Troll troll = new Troll("Troll");
-        Skeleton randall = new Skeleton("Randall")
+        Skeleton randall = new Skeleton("Randall");
         Encounter encounter = new Encounter();
         encounter.AddCharacter(gandalf);
         encounter.AddCharacter(gimli);
