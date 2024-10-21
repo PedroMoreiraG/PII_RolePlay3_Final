@@ -7,7 +7,7 @@ namespace LibraryTests;
 public class CharacterTests
 {
     [Test]
-    public void Prueba()
+    public void PruebaPersonaje()
     {
         Dwarf dwarf = new Dwarf("Jorge");
         Assert.That(100 == dwarf.Health);

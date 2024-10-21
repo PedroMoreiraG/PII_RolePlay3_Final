@@ -7,7 +7,7 @@ namespace LibraryTests;
 public class ItemTests
 {
     [Test]
-    public void Prueba()
+    public void PruebaItem()
     {
         Archer archer = new Archer("Pedro");
         Assert.That(15 == archer.AttackValue);
