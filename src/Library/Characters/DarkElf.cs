@@ -4,9 +4,9 @@ public class DarkElf : Enemies
 {
     public List<IMagicalItem> magicalItems = new List<IMagicalItem>();
     
-    public DarkElf(string name) : base(name)
+    public DarkElf(string Name) : base(Name, 12)
     {
-        this.Name = name;
+        this.Name = Name;
         
         this.AddItem(new Staff());
     }

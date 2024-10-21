@@ -2,9 +2,9 @@
 
 public class Troll : Enemies
 {
-    public Troll(string name) : base(name)
+    public Troll(string Name) : base(Name, 8)
     {
-        this.Name = name;
+        this.Name = Name;
         
         this.AddItem(new Sword());
         this.AddItem(new Axe());

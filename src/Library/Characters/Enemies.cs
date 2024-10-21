@@ -2,8 +2,10 @@
 
 public abstract class Enemies : Character
 {
-    public Enemies(string Name) : base(Name)
+    public int VictoryPoints { get; set; }
+
+    public Enemies(string Name, int victoryPoints) : base(Name)
     {
-        this.Name = Name;
+        this.VictoryPoints = victoryPoints;
     }
 }

@@ -1,4 +1,5 @@
 ﻿using System;
+using Library.Encounters;
 
 namespace Ucu.Poo.RoleplayGame.Program;
 
@@ -14,16 +15,17 @@ class Program
         gandalf.AddItem(book);
 
         Dwarf gimli = new Dwarf("Gimli");
-
-        Console.WriteLine($"Gimli has ❤️ {gimli.Health}");
-        Console.WriteLine($"Gandalf attacks Gimli with ⚔️ {gandalf.AttackValue}");
-
-        gimli.ReceiveAttack(gandalf.AttackValue);
-
-        Console.WriteLine($"Gimli has ❤️ {gimli.Health}");
-
-        gimli.Cure();
-
-        Console.WriteLine($"Someone cured Gimli. Gimli now has ❤️ {gimli.Health}");
+        DarkElf malekith = new DarkElf("Malekith");
+        Knight arturo = new Knight("Arturo");
+        Archer legolas = new Archer("Legolas");
+        Troll troll = new Troll("Troll");
+        Encounter encounter = new Encounter();
+        encounter.AddCharacter(gandalf);
+        encounter.AddCharacter(gimli);
+        encounter.AddCharacter(malekith);
+        encounter.AddCharacter(arturo);
+        encounter.AddCharacter(legolas);
+        encounter.AddCharacter(troll);
+        encounter.DoEncounter();
     }
 }

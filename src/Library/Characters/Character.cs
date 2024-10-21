@@ -17,7 +17,7 @@ public abstract class Character
         {
             return this.health;
         }
-        private set
+        set
         {
             this.health = value < 0 ? 0 : value;
         }
@@ -70,12 +70,16 @@ public abstract class Character
         this.Health = 100;
     }
 
-    public void ReceiveAttack(int power)
+    public void ReceiveAttack(Character character)
     {
-        if (this.DefenseValue < power)
+        if (this.DefenseValue < character.AttackValue)
         {
-            this.Health -= power - this.DefenseValue;
+            this.Health -= character.AttackValue - this.DefenseValue;
         }
     }
     
+    public bool IsDead()
+    {
+        return Health < 1;
+    }
 }

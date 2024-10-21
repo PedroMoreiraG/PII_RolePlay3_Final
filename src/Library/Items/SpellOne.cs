@@ -6,7 +6,7 @@ public class SpellOne: ISpell
     {
         get
         {
-            return 70;
+            return 10;
         }
     }
 
@@ -14,7 +14,7 @@ public class SpellOne: ISpell
     {
         get
         {
-            return 70;
+            return 10;
         }
     }
 }
